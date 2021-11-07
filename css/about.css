@@ -1,23 +1,78 @@
-h1 ,h2 {
-    font-size: 1.7rem;
+
+
+
+/* .about {} */
+
+.about h1 {
+    font-family: One, sans-serif;
+    font-size: 30px;
+    padding: 0 50px;
 }
 
-span {
-    font-size: 1.7rem;
-    color: rgb(223, 54, 138);
+.about h1 span {
+    color: var(--purple)
 }
 
-.team-people img{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 3rem;
-    padding: 0.5rem;
-    border:  0.5rem solid blueviolet;
+.about p {
+    padding: 0 50px;
+    font-family: "Open-sans";
 }
+
+.about img {
+    margin-top: 50px;
+    width: 100%;
+}
+
 .team {
+    padding: 0 200px;
+    padding-bottom: 100px;
+}
+
+.team h2 {
+   font-family: One, sans-serif;
+   font-size: 30px;
+}
+
+.team h2 span {
+    color: var(--purple);
+}
+
+.team_list {
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team_person {
+    font-family: "Open-sans", sans-serif;
+    width: calc(50% - 20px);
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.team_info {
+    margin: 10px;
+}
+
+.team_person h3 {
+    font-family: "Open-sans";
+    font-size: 1.35rem;
+    margin-top: 20px;
+}
+
+.team_person p {
+    max-width: 300px;
+    font-family: "Open-sans";
+    margin-top: -20px;
+}
+
+.team_person img {
+    border: 5px solid #e04d28;
+    padding: 5px;
+    width: 120px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
