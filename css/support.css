@@ -68,17 +68,23 @@
     top: -10%;
     z-index: 0;
     transform-origin: 50% 65%;
-    animation: 2s infinite linear rotate;
+    animation: 3.5s infinite linear rotate;
+
 }
 
 @keyframes rotate {
-    from {
+    0% {
         transform: rotateZ(0deg);
         
     }
+    
+    50% {
+      
+        transform: rotateZ(360deg); 
+    }
 
-    to {
-        transform: rotateZ(360deg);
+    100%{
+        transform: rotateZ(-360deg);
     }
 }
 

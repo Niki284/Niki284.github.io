@@ -98,7 +98,9 @@ header {
     display: block;
     white-space: nowrap; 
     text-transform: uppercase;
+    
 }
+
 
 footer {
     display: flex;
@@ -135,15 +137,18 @@ footer img {
     margin: auto;
     display: block;
     position: relative;
-    animation: 13s infinite linear run;
+    animation: 20s infinite linear run;
 }
 
 @keyframes run{
     0% {
         left: 300px;
     }
+    50% {
+        left: -1250px;
+    }
     100% {
-        left: -2000px;
+        left: -2500px;
     }
 }
 

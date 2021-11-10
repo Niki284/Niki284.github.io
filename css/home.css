@@ -44,17 +44,25 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    transition: 0.2s;
+    transition: 0.5s;
+  
 }
+.code-afrika_text button:hover {
+
+    border-radius: 5px 20px 20px 5px;
+}   
 
 .code-afrika_text button::after {
     content: '➜';
+    /*background-image: url(images/arrow--right.svg);*/
     margin-left: 5px;
     position: absolute;
-    left: -100%;
+    right: 5;
     transition: 0.5s;
-    opacity: 0;
-    /* box-shadow: 0px 0px 6px 6px #65819b; */
+    cursor:pointer;
+    opacity: -100%;
+    
+    /*box-shadow: 0px 0px 6px 6px #65819b; */
 }
 
 
@@ -62,6 +70,7 @@
     left: 0;
     position: relative;
     opacity: 1;
+    
 }
 
 
@@ -142,7 +151,16 @@
     width: 60%;
 }
 
-.progress_bar input {
+/* .progress_bar .progress_bar1  {
+    -webkit-appearance: none !important;
+    width: 82%;
+    margin-left: 20px;
+    height: 6px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #2382d9 20%, #dbdbdb 80%);
+    border: none;
+}
+.progress_bar .progress_bar2 {
     -webkit-appearance: none !important;
     width: 82%;
     margin-left: 20px;
@@ -152,8 +170,49 @@
     border: none;
 }
 
+.progress_bar .progress_bar3 {
+    -webkit-appearance: none !important;
+    width: 82%;
+    margin-left: 20px;
+    height: 6px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #2382d9 85%, #dbdbdb 15%);
+    border: none;
+}
+
 .progress_bar input[type="range"]::-webkit-slider-thumb {
-    display: none;
+    /*display: none;*/
+/* } */
+
+.progress_bar {
+    /* width: 100%; */
+    margin: 10px;
+    height: 7px;
+    background-color: #b4b4b4;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress_bar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--blue);
+}
+
+.block_article:nth-of-type(1) .progress_bar::before{
+    width: 20%;
+}
+
+.block_article:nth-of-type(2) .progress_bar::before{
+    width: 50%;
+}
+
+.block_article:nth-of-type(3) .progress_bar::before{
+    width: 90%;
 }
 
 .block_section {
